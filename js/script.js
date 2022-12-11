@@ -2,10 +2,13 @@ function validateForm() {
     // Get the values of all form fields
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
+    var address = document.getElementById('address').value;
+    var city = document.getElementById('city').value;
+    var postalCode = document.getElementById('postal-code').value;
     var message = document.getElementById('message').value;
 
     // Validate that all fields have been filled out
-    if (name === '' || email === '' || message === '') {
+    if (name === '' || email === '' || address === '' || city === '' || postalCode === '' || message === '') {
     alert('Please fill out all fields before submitting the form.');
     return false;
     }
