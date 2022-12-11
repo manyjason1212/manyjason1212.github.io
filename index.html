@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yee Hon's Portfolio</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="inner-text">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5103AQEK0TlN2sLrsQ/profile-displayphoto-shrink_800_800/0/1517373711440?e=1675900800&v=beta&t=99ot0AUARiyASEBfUSn2-orYk1Ujh72UKa5-EJyBa6U" class="profile-img">
+                    <h1>Welcome to my personal website, my name is Yee Hon MAN (Jason).</h1>
+                    <a download="Yee Hon MAN - RESUME.pdf" href="./assets/Resume.pdf"><button class="btn"><i class="uil uil-import"></i>Download Resume</button></a>
+                    <a href="#contact"><button class="btn">Contact Me</button></a>
+                </div>
+            </section>
+            <section id="about">
+                <div class="inner-text">
+                    <h2>Something About Me</h2>
+                    <p>My name is <strong>Yee Hon MAN</strong>, you can also call me <strong>Jason</strong>. I'm currently a Computer Programming student at Seneca College. I have been learning C, C++, Oracle SQL, Javascript, CSS and HTML in the past year.</p>
+                    <p>I'm expected to graduate in the Summer 2023.</p>
+                    <p>Date: 10 Dec 2022</p>
+                    <p>Course: WEB222</p>
+                    <p>Session No: NFF</p>
+                    <p>Professor: Mark Meritt</p>
+                    <p>Honesty Statement: 
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+                        </p>
+                    <h1>Education Background</h1>
+                    <ul>
+                        <li>
+                            <strong>Bachelor of Arts in Economics</strong><br>
+                                    Indiana University Bloomington, Bloomington, Indiana, 2014
+                        </li>
+                        <li><strong>Associate Degree</strong><br>
+                                    Moraine Valley Community College, Palos Hills, Illinois, 2012
+                        </li>
+                    </ul>
+                    <h1>Work Experience</h1>
+                    <ul>
+                        <li>AVP, Business Development (Fixed Income Fintech), Covalent Capital Pte Ltd, Hong Kong, 2019-2022</li>
+                        <li>Associate, IHS Markit, Hong Kong, 2018-2019</li>
+                        <li>Researcher in Debt Capital Markets, Dealogic, Hong Kong, 2015-2018</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="inner-text">
+                    <h2>Contact me</h2>
+                    <form action="https://httpbin.org/post" method="post" onsubmit="return validateForm()">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                      
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+
+                        <label for="address">Current Address:</label><br>
+                        <input type="text" id="address" name="address"><br>
+
+                        <label for="city">City:</label><br>
+                        <input type="text" id="city" name="city"><br>
+
+                        <label for="postal-code">Postal Code:</label><br> 
+                        <input type="text" id="postal-code" name="postal-code"><br>
+                      
+                        <h3>What is the purpose of your message?</h3>
+
+                        <label>
+                        <input type="radio" name="type" value="question" onclick="showHideInput('question')">
+                        Question
+                        </label><br>
+
+                        <label>
+                        <input type="radio" name="type" value="comment" onclick="showHideInput('comment')">
+                        Comment
+                        </label><br>
+
+                        <label>
+                        <input type="radio" name="type" value="hiring" onclick="showHideInput('hiring')">
+                        Hiring
+                        </label><br>
+
+                        <!-- Additional input field for hourly rate, hidden by default -->
+                        <div id="hourly-rate-input" style="display:none">
+                        <label for="hourly-rate">Hourly rate:</label><br>
+                        <input type="number" id="hourly-rate" name="hourly-rate" step="0.01" min="0"><br>
+                        </div>
+
+                        <label for="position">What is your job position?</label><br> 
+                        <input type="text" id="position" name="position"><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message"></textarea><br>
+                      
+                        <button type="submit">Send</button>
+                      </form>
+                      
+                </div>
+            </section>
+        </main>
+        <footer>
+            © Copyright By Yee Hon MAN, 2022
+        </footer>
+        <!-- JavaScript file -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>
