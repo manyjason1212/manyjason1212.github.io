@@ -136,4 +136,17 @@ form input[type="submit"]:hover {
     body {
       width: 100%;
     }
+    p{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 12px;
+    }
+    p{
+        font-size: 14px;
+    }
   }
+  
